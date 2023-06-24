@@ -43,7 +43,7 @@ function billSummary() {
 
     document.getElementById("totalBill").innerHTML = "$" + totalBill.toFixed(2);
     document.getElementById("tipAmount").innerHTML = "$" + tipAmount.toFixed(2) + ' (' + tipPercentage + '%)';
-    document.getElementById("taxAmount").innerHTML = "$" + taxAmount;
+    document.getElementById("taxAmount").innerHTML = "$" + taxAmount.toFixed(2);
     document.getElementById("costPerDiner").innerHTML = "$" + costPerDiner.toFixed(2);
 
   }

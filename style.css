@@ -2,8 +2,6 @@ body{
     background: rgb(189, 240, 238);
     font-family: 'Space Mono', monospace;
     align-items: center;
-    margin: 2% 30%;
-    width: 40%;
 }
 
 h2 {
@@ -18,18 +16,28 @@ main {
     padding: 8%;
     padding-top: 2%;
     border-radius: 1rem;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 40px;
 }
-
-.billCont, input, select {
+section {
+    display: flex;
+    flex-direction: column;
+}
+.billCont {
+    width: 80%;
+    margin: auto;
+}
+input, select {
     /* display:block; */
     text-align: center;
     padding-top: 4%;
 }
 input{
-    width: 42%;
+    width: 50%;
 }
 select{
-    width: 52%;
+    width: 50%;
 
 }
 
@@ -67,7 +75,11 @@ input, select{
 
 .outputLabel {
     /* text-align: center; */
-    justify-content:right;
+    /* justify-content:right; */
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    margin: auto;
 }
 
 .outputLabel span{
