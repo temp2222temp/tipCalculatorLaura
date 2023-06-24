@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main> 
+        <section class="input">
+            <h2>Tip Calculator</h2>
+            
+            <div class="billCont"> 
+
+            <label for="numberOfPerson">Number of Diners:</label>
+            <input type="number" id="numberOfPerson" min="1" value="1" oninput="billSummary()" ><br>
+            
+            <label for="mealTotal">Total Cost of the Meal:</label>
+            <input type="number" id="mealTotal" min="0" step="0.01" value="0" oninput="billSummary()"><br>
+            
+            <label for="tipPercentage">Tipping Percentage:</label>
+            <select id="tipPercentage" oninput="billSummary()">
+                <option value="5">5%</option>
+                <option value="10">10%</option>
+                <option value="15">15%</option>
+                <option value="20">20%</option>
+                <option value="25">25%</option>
+                <option value="30">30%</option>
+            </select><br>
+            
+            <label for="province">Province or Territory:</label>
+            <select id="province" oninput="billSummary()">
+                <option value="Alberta">Alberta</option>
+                <option value="British Columbia">British Columbia</option>
+                <option value="Manitoba">Manitoba</option>
+                <option value="New Brunswick">New Brunswick</option>
+                <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+                <option value="Northwest Territories">Northwest Territories</option>
+                <option value="Nova Scotia">Nova Scotia</option>
+                <option value="Nunavut">Nunavut</option>
+                <option value="Ontario">Ontario</option>
+                <option value="Prince Edward Island">Prince Edward Island</option>
+                <option value="Quebec">Quebec</option>
+                <option value="Saskatchewan">Saskatchewan</option>
+                <option value="Yukon">Yukon</option>
+            </select><br>
+           </div> 
+        </section>
+
+        <section class="output"> 
+            
+            <h2>Bill Summary</h2>
+
+            <div class="outputLabel"> 
+                <label for="totalBill">Total Bill:</label>
+                <span id="totalBill"></span></br>
+
+                <label for="tipAmount">Total Tip:</label>    
+                <span id="tipAmount"></span></br>
+
+                <label for="taxAmount">Total Tax:</label>    
+                <span id="taxAmount"></span></br>
+
+                <label for="costPerDiner">Cost per Diner:</label>    
+                <span id="costPerDiner"></span></br>
+            </div>
+        </section>
+
+
+
+        </main>
+    </body>
+</html>
+
